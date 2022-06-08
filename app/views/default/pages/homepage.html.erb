@@ -1,0 +1,31 @@
+<div class="hero min-h-screen bg-base-200">
+  <div class="hero lg:hidden w-full">
+    <div class="hero min-h-screen" style="background-image: url(<%= content.image_url :hero_image_1 %>)">
+      <div class="hero-overlay bg-opacity-60"></div>
+    </div>
+  </div>
+  <div class="hero hidden lg:grid w-full">
+    <div class="hero min-h-screen mask mask-parallelogram" style="background-image: url(<%= content.image_url :hero_image_1 %>)">
+      <div class="hero-overlay bg-opacity-60"></div>
+    </div>
+
+    <div class="grid grid-cols-2 w-full">
+      <div class="hero min-h-screen w-50" style="background-image: url(<%= content.image_url :hero_image_2 %>)">
+        <div class="hero-overlay bg-opacity-60"></div>
+      </div>
+
+      <div class="hero min-h-screen w-50" style="background-image: url(<%= content.image_url :hero_image_3 %>)">
+        <div class="hero-overlay bg-opacity-60"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-md">
+      <h1 class="text-5xl font-bold"><%= current_page.title %></h1>
+<!--      <p class="py-6"><%#= content.html :text %></p>-->
+    </div>
+  </div>
+</div>

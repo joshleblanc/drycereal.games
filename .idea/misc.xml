@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="UnattendedHostPersistenceState">
+    <option name="openedFilesInfos">
+      <list>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1306" />
+          <option name="fileUrl" value="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/spina-2.10.0/lib/spina/theme.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1319" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/config/initializers/themes/default.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/index.html.erb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="67" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/models/spina/parts/game.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="182" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/spina/admin/parts/games/_form.html.erb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="654" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/config/initializers/spina.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="87" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/config/initializers/parts.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="762" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitignore" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="4" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.ruby-version" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.tool-versions" />
+        </OpenedFileInfo>
+      </list>
+    </option>
+  </component>
+</project>
