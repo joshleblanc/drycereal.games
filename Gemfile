@@ -73,6 +73,8 @@ end
 
 gem "spina", "~> 2.10"
 
-gem "tailwindcss-rails", "~> 2.0"
-
 gem "foreman", "~> 0.87.2"
+
+gem "cssbundling-rails", "~> 1.1"
+
+gem "tailwindcss-rails", "~> 2.0"

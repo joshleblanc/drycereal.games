@@ -11,13 +11,11 @@
       <%= presenter.to_html %>
 
     </div>
-    <a class="btn btn-ghost normal-case text-xl"><%= current_account.name %></a>
+    <%= link_to current_account.name, root_url, class: "btn btn-ghost normal-case text-xl" %>
   </div>
   <div class="navbar-center hidden lg:flex">
     <% presenter.list_css = "menu menu-horizontal p-0" %>
     <%= presenter.to_html %>
   </div>
-  <div class="navbar-end">
-    <a class="btn">Get started</a>
-  </div>
+  <div class="navbar-end"></div>
 </div>

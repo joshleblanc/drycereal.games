@@ -1,31 +1,38 @@
-<div class="hero min-h-screen bg-base-200">
-  <div class="hero lg:hidden w-full">
-    <div class="hero min-h-screen" style="background-image: url(<%= content.image_url :hero_image_1 %>)">
-      <div class="hero-overlay bg-opacity-60"></div>
-    </div>
-  </div>
-  <div class="hero hidden lg:grid w-full">
-    <div class="hero min-h-screen mask mask-parallelogram" style="background-image: url(<%= content.image_url :hero_image_1 %>)">
-      <div class="hero-overlay bg-opacity-60"></div>
-    </div>
-
-    <div class="grid grid-cols-2 w-full">
-      <div class="hero min-h-screen w-50" style="background-image: url(<%= content.image_url :hero_image_2 %>)">
-        <div class="hero-overlay bg-opacity-60"></div>
-      </div>
-
-      <div class="hero min-h-screen w-50" style="background-image: url(<%= content.image_url :hero_image_3 %>)">
-        <div class="hero-overlay bg-opacity-60"></div>
-      </div>
-    </div>
-  </div>
-
-
+<div class="hero h-[65vh] bg-base-200 relative" style="background-image: url(<%= content.image_url :hero_image %>)">
+  <div class="swoopy absolute w-full bottom-0 h-[50px]"></div>
 
   <div class="hero-content text-center text-neutral-content">
     <div class="max-w-md">
-      <h1 class="text-5xl font-bold"><%= current_page.title %></h1>
+<!--      <h1 class="text-5xl font-bold shadow"><%#= current_page.title %></h1>-->
 <!--      <p class="py-6"><%#= content.html :text %></p>-->
     </div>
   </div>
 </div>
+
+<div class="w-full bg-[#1B1B1E] text-white border-b-4 border-b-accent-content p-4">
+  <div class="flex justify-center">
+    <div class="p-4 bg-accent-content w-fit rounded-box">
+      Newest Release
+    </div>
+  </div>
+
+  <h1 class="text-4xl font-bold shadow justify-center flex p-4"><%= content.text :headline %></h1>
+</div>
+
+<div class="container mx-auto mt-12 mb-8 px-5">
+  <div>
+    <%= content.html :body %>
+  </div>
+</div>
+
+
+<div class="swoopy w-full h-[25px]"></div>
+<div class="bg-[#1B1B1E] flex justify-around p-8 border-b-4 border-b-accent-content">
+
+  <% game_page = Spina::Page.find_by(name: "games") %>
+  <%= link_to game_page.title, game_page.materialized_path, class: "btn" %>
+
+  <% packages_page = Spina::Page.find_by(name: "packages") %>
+  <%= link_to packages_page.title, packages_page.materialized_path, class: "btn" %>
+</div>
+

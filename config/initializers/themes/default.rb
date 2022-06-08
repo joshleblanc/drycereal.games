@@ -23,10 +23,12 @@ Spina::Theme.register do |theme|
   # - Option
   # - Repeater
   theme.parts = [
-    {name: 'text',  title: "Body", hint: "Your main content", part_type: "Spina::Parts::Text"},
-    {name: "hero_image_1", title: "Hero Image 1", hint: "Primary hero image to show in the background", part_type: "Spina::Parts::Image"},
-    {name: "hero_image_2", title: "Hero Image 2", hint: "Secondary hero image to show in the background", part_type: "Spina::Parts::Image"},
-    {name: "hero_image_3", title: "Hero Image 3", hint: "Secondary hero image to show in the background", part_type: "Spina::Parts::Image"},
+    {name: 'body',  title: "Body", hint: "Your main content", part_type: "Spina::Parts::Text"},
+    {name: "headline", title: "Headline", part_type: "Spina::Parts::Line" },
+    {name: "supporting_images", title: "Supporting Images", hint: "Smaller images that accentuate the content", part_type: "Spina::Parts::ImageCollection" },
+    {name: "hero_image", title: "Hero Image", hint: "The main image", part_type: "Spina::Parts::Image" },
+    {name: "cover_image", title: "Cover Image", hint: "The cover image to show on the index page", part_type: "Spina::Parts::Image"},
+    {name: "play_link", title: "Play Link", hint: "The link to the crayta website", part_type: "Spina::Parts::Line"},
   ]
   
   # View templates
@@ -34,10 +36,11 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
-    {name: 'homepage', title: 'Homepage', parts: %w(text hero_image_1 hero_image_2 hero_image_3)},
-    {name: 'show', title: 'Page', parts: %w(text) },
-    {name: "index", title: "Index", parts: %w(text) },
-    {name: "game", title: "Game", parts: %w(text) }
+    {name: 'homepage', title: 'Homepage', parts: %w(body headline hero_image)},
+    {name: "games", title: "Games", parts: %w(headline body hero_image) },
+    {name: "game", title: "Game", parts: %w(body supporting_images hero_image cover_image play_link) },
+    {name: "packages", title: "Packages", parts: %w(headline body hero_image) },
+    {name: "package", title: "Package", parts: %w(body headline hero_image) }
   ]
   
   # Custom pages
@@ -45,6 +48,8 @@ Spina::Theme.register do |theme|
   # By naming them you can reference them in your code.
   theme.custom_pages = [
     {name: 'homepage', title: "Homepage", deletable: false, view_template: "homepage"},
+    {name: "games", title: "Games", deletable: false, view_template: "games" },
+    {name: "packages", title: "Packages", deletable: false, view_template: "packages"}
   ]
   
   # Navigations (optional)
@@ -63,8 +68,8 @@ Spina::Theme.register do |theme|
   # Think of resources as a collection of pages. They are managed separately in Spina
   # allowing you to separate these pages from the 'main' collection of pages.
   theme.resources = [
-    { name: "games", label: "Games", view_template: "game" },
-    { name: "packages", label: "Packages", view_template: "show" }
+    { name: "games", label: "Games", view_template: "game", slug: "games" },
+    { name: "packages", label: "Packages", view_template: "package", slug: "packages" }
   ]
   
   # Plugins (optional)
