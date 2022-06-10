@@ -1,31 +1,26 @@
-<div class="hero h-[65vh] bg-base-200 relative" style="background-image: url(<%= content.image_url :hero_image %>)">
-  <div class="swoopy absolute w-full bottom-0 h-[50px]"></div>
-
-  <div class="hero-content text-center text-neutral-content">
-    <div class="max-w-md">
-      <h1 class="text-5xl font-bold shadow"><%= current_page.title %></h1>
-      <p class="py-6"><%= content.text :headline %></p>
-    </div>
-  </div>
-</div>
+<%= render("default/shared/header",
+           title: current_page.title,
+           headline: content.text(:headline),
+           hero_url: content.image_url(:hero_image)
+    )
+%>
 
 <div class="w-full bg-[#1B1B1E] text-white border-b-4 border-b-accent-content p-4">
   <div class="container mx-auto mt-12 mb-8 px-5">
     <div class="mb-4">
       <%= content.html :body %>
     </div>
-    <div class="flex justify-center">
-      <div class="grid">
-        <% packages.each do |package| %>
-          <div class="card shadow w-96 hover:shadow-white ease-in-out duration-300 m-4">
-            <%= link_to package.materialized_path do %>
-              <div class="card-body">
-                <%= package.content.text :title %>
-              </div>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
+    <div class="flex justify-center flex-wrap">
+      <% packages.each do |package| %>
+        <div class="card text-black bg-white shadow w-full hover:shadow-black ease-in-out duration-300 m-4">
+          <%= link_to package.materialized_path do %>
+            <div class="flex items-center p-4 pl-8">
+              <span class="card-title pr-6"><%= package.title %></span>
+              <span><%= package.content.text :headline %></span>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>

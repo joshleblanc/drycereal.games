@@ -1,0 +1,13 @@
+<%= render("default/shared/header",
+           title: current_page.title,
+           hero_url: content.image_url(:hero_image)
+    )
+%>
+<div class="w-full bg-[#1B1B1E] text-white border-b-4 border-b-accent-content p-4">
+  <h1 class="flex justify-center bold text-3xl">Usage</h1>
+  <div class="container mx-auto mt-12 mb-8 px-4">
+    <div class="mb-4">
+      <%= content.html :body %>
+    </div>
+  </div>
+</div>

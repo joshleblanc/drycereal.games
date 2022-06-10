@@ -1,0 +1,12 @@
+<div class="w-full bg-black text-white border-t-4 border-t-accent-content p-4">
+  <div class="flex justify-center text-3xl">
+    <%= current_account.name %>
+  </div>
+  <div class="flex flex-wrap justify-center">
+    <% Spina::Page.all.regular_pages.active.in_menu.sorted.live.each do |page| %>
+      <%= link_to page.title, page.materialized_path, class: "p-4" %>
+    <% end %>
+    <%= link_to "Crayta", "https://crayta.com", class: "p-4" %>
+    <%= link_to "Discord", "https://discord.gg/rcT7KhJV", class: "p-4" %>
+  </div>
+</div>

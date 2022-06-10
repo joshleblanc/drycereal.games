@@ -4,44 +4,52 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="648" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/shared/_navigation.html.erb" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
           <option name="caretOffset" value="104" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/app/helpers/games_helper.rb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="29" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/app/helpers/application_helper.rb" />
+          <option name="caretOffset" value="518" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/game.html.erb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="117" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/app/helpers/packages_helper.rb" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="564" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/games.html.erb" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/package.html.erb" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
+          <option name="caretOffset" value="383" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/layouts/default/application.html.erb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1084" />
+          <option name="caretOffset" value="684" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/packages.html.erb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1736" />
+          <option name="caretOffset" value="2938" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/config/initializers/themes/default.rb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="718" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/game.html.erb" />
+          <option name="caretOffset" value="461" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/shared/_header.html.erb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="937" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/homepage.html.erb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="165" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/shared/_footer.html.erb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="177" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/games.html.erb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="679" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/shared/_navigation.html.erb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1098" />
+          <option name="fileUrl" value="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/spina-2.10.0/app/presenters/spina/menu_presenter.rb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="407" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/package.html.erb" />
         </OpenedFileInfo>
       </list>
     </option>

@@ -23,6 +23,7 @@ Spina::Theme.register do |theme|
   # - Option
   # - Repeater
   theme.parts = [
+    {name: 'footer',  title: "Footer", hint: "Your footer content", part_type: "Spina::Parts::Text"},
     {name: 'body',  title: "Body", hint: "Your main content", part_type: "Spina::Parts::Text"},
     {name: "headline", title: "Headline", part_type: "Spina::Parts::Line" },
     {name: "supporting_images", title: "Supporting Images", hint: "Smaller images that accentuate the content", part_type: "Spina::Parts::ImageCollection" },
@@ -62,7 +63,7 @@ Spina::Theme.register do |theme|
   # Layout parts (optional)
   # You can create global content that doesn't belong to one specific page. We call these layout parts.
   # You only have to reference the name of the parts you want to have here.
-  theme.layout_parts = []
+  theme.layout_parts = %w()
   
   # Resources (optional)
   # Think of resources as a collection of pages. They are managed separately in Spina

@@ -1,13 +1,9 @@
-<div class="hero h-[65vh] bg-base-200 relative" style="background-image: url(<%= content.image_url :hero_image %>)">
-  <div class="swoopy absolute w-full bottom-0 h-[50px]"></div>
-
-  <div class="hero-content text-center text-neutral-content">
-    <div class="max-w-md">
-        <h1 class="text-5xl font-bold shadow"><%= current_page.title %></h1>
-        <p class="py-6"><%= content.text :headline %></p>
-    </div>
-  </div>
-</div>
+<%= render("default/shared/header",
+           title: current_page.title,
+           headline: content.text(:headline),
+           hero_url: content.image_url(:hero_image)
+    )
+%>
 
 <div class="w-full bg-[#1B1B1E] text-white border-b-4 border-b-accent-content p-4">
   <div class="container mx-auto mt-12 mb-8 px-4">
