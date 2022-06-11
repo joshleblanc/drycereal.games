@@ -81,6 +81,8 @@ RUN yarn install
 
 COPY . /app
 
+RUN echo $RAILS_MASTER_KEY
+
 ENV RAILS_ENV production
 RUN bin/rails assets:precompile
 
