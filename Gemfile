@@ -78,3 +78,7 @@ gem "foreman", "~> 0.87.2"
 gem "cssbundling-rails", "~> 1.1"
 
 gem "tailwindcss-rails", "~> 2.0"
+
+gem "aws-sdk-s3", "~> 1.114"
+
+gem "sidekiq", "~> 6.5"
