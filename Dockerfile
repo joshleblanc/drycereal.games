@@ -1,4 +1,5 @@
 FROM ruby:3.1
+ARG RAILS_MASTER_KEY
 
 RUN gem install "bundler:~>2.0" --no-document && \
     gem update --system && \
