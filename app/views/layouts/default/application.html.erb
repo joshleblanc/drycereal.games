@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="light">
   <head>
     <title><%= current_account.name %></title>
     <%= csrf_meta_tags %>
@@ -10,7 +10,9 @@
   <body>
     <%= render 'default/shared/navigation' %>
     
-    <%= yield %>
+    <main class="container mx-auto mt-28 px-5 flex flex-wrap">
+      <%= yield %>
+    </main>
 
     <%= render 'default/shared/footer' %>
   </body>

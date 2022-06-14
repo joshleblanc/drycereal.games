@@ -3,28 +3,33 @@
     )
 %>
 
-<div class="w-full bg-[#1B1B1E] text-white border-b-4 border-b-accent-content p-4">
-  <div class="flex justify-center">
-    <div class="p-4 bg-accent-content w-fit rounded-box">
-      Newest Release
+<div class="bg-base-200 w-[20%] border">
+  <div class="p-4">
+    <div class="flex justify-center">
+      <div class="p-4 text-bold text-lg">
+        Newest Release
+        <div class="divider"></div>
+      </div>
+
     </div>
+
+    <h1 class="text-4xl font-bold justify-center flex p-4"><%= content.text :headline %></h1>
   </div>
 
-  <h1 class="text-4xl font-bold shadow justify-center flex p-4"><%= content.text :headline %></h1>
 </div>
 
-<div class="container prose text-center mx-auto mt-12 mb-8 px-5">
+
+<div class="prose text-center mx-auto mt-12 mb-8 px-5 w-[20%] border">
   <%= content.html :body %>
 </div>
 
+<% game_page = Spina::Page.find_by(name: "games") %>
+<%= link_to game_page.materialized_path, class: "border w-[20%] flex align-center justify-center background-", style: "background-image: url('#{content.image_url(:games_image)}')" do %>
+  <div class="hero-overlay bg-opacity-60 relative"></div>
+  <%= game_page.title %>
+<% end %>
 
-<div class="swoopy w-full h-[25px]"></div>
-<div class="bg-[#1B1B1E] flex justify-around p-8 border-b-4 border-b-accent-content">
-
-  <% game_page = Spina::Page.find_by(name: "games") %>
-  <%= link_to game_page.title, game_page.materialized_path, class: "btn" %>
-
+<div class="p-8 flex flex justify-around w-[20%]">
   <% packages_page = Spina::Page.find_by(name: "packages") %>
-  <%= link_to packages_page.title, packages_page.materialized_path, class: "btn" %>
+  <%= link_to packages_page.title, packages_page.materialized_path, class: "btn btn-primary" %>
 </div>
-
