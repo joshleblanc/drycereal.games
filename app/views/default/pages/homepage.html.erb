@@ -3,23 +3,23 @@
     )
 %>
 
-<div class="bg-base-200 min-w-[20%] grow border">
+<div class="bg-base-200 min-w-[20%] basis-[min-content] grow border">
   <div class="p-4">
     <div class="flex justify-center">
-      <div class="p-4 text-bold text-lg">
+      <div class="p-4 text-center text-bold text-lg">
         Newest Release
         <div class="divider"></div>
       </div>
 
     </div>
 
-    <h1 class="text-4xl font-bold justify-center flex p-4"><%= content.text :headline %></h1>
+    <h1 class="text-4xl font-bold justify-center text-center flex p-4"><%= content.text :headline %></h1>
   </div>
 
 </div>
 
 
-<div class="prose min-w-[20%] text-center grow pt-12 border">
+<div class="prose min-w-[20%] text-center basis-[min-content] grow p-12 border">
   <%= content.html :body %>
 </div>
 
