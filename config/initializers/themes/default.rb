@@ -31,7 +31,8 @@ Spina::Theme.register do |theme|
     {name: "cover_image", title: "Cover Image", hint: "The cover image to show on the index page", part_type: "Spina::Parts::Image"},
     {name: "play_link", title: "Play Link", hint: "The link to the crayta website", part_type: "Spina::Parts::Line"},
 
-    {name: "games_image", title: "Games Image", part_type: "Spina::Parts::Image" }
+    {name: "games_image", title: "Games Image", part_type: "Spina::Parts::Image" },
+    {name: "packages_image", title: "Packages Image", part_type: "Spina::Parts::Image"}
   ]
   
   # View templates
@@ -39,7 +40,7 @@ Spina::Theme.register do |theme|
   # You define which parts you want to enable for every view template
   # by referencing them from the theme.parts configuration above.
   theme.view_templates = [
-    {name: 'homepage', title: 'Homepage', parts: %w(body headline hero_image games_image)},
+    {name: 'homepage', title: 'Homepage', parts: %w(body headline hero_image games_image packages_image)},
     {name: "games", title: "Games", parts: %w(headline body hero_image) },
     {name: "game", title: "Game", parts: %w(body supporting_images hero_image cover_image play_link) },
     {name: "packages", title: "Packages", parts: %w(headline body hero_image) },
