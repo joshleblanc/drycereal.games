@@ -1,7 +1,7 @@
 <div class="hero h-[65vh] min-w-[20%] w-[unset] grow border border-primary bg-base-200 relative" style="background-image: url(<%= hero_url %>)">
 
-  <div class="hero-content text-center text-neutral-content">
-    <div class="max-w-md">
+  <% if local_assigns[:title].present? || local_assigns[:headline].present? %>
+    <div class="hero-content text-center text-neutral-content max-w-full w-full bg-base-300/50">
       <% if local_assigns[:title].present? %>
         <h1 class="text-5xl text-white font-bold drop-shadow-xl"><%= title %></h1>
       <% end %>
@@ -9,5 +9,5 @@
         <p class="py-6"><%= headline %></p>
       <% end %>
     </div>
-  </div>
+  <% end %>
 </div>
