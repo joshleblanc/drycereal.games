@@ -11,7 +11,7 @@
       <%= content.html :body %>
     </div>
     <div class="flex flex-wrap justify-center">
-      <% games.each do |game| %>
+      <% games.reverse.each do |game| %>
         <div class="card shadow w-96 hover:shadow-white ease-in-out duration-300 m-4">
           <%= link_to game.materialized_path do %>
             <figure><%= image_tag game.content.image_url :cover_image %></figure>

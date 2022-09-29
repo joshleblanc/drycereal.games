@@ -42,6 +42,12 @@
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.8.0, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ancestry (v4.1.0, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="attr_json (v1.4.0, asdf: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-eventstream (v1.2.0, asdf: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-partitions (v1.598.0, asdf: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk-core (v3.131.1, asdf: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk-kms (v1.57.0, asdf: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sdk-s3 (v1.114.0, asdf: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="aws-sigv4 (v1.5.0, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="babosa (v2.0.0, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.18, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, asdf: 3.1.0) [gem]" level="application" />
@@ -53,6 +59,7 @@
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.37.1, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v4.1.0, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.10, asdf: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="connection_pool (v2.2.5, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cssbundling-rails (v1.1.0, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.5.0, asdf: 3.1.0) [gem]" level="application" />
@@ -67,6 +74,7 @@
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.5.11, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="irb (v1.4.1, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.11.5, asdf: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jmespath (v1.6.1, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jsonapi-serializer (v2.2.0, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari (v1.2.2, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="kaminari-actionview (v1.2.2, asdf: 3.1.0) [gem]" level="application" />
@@ -108,6 +116,7 @@
     <orderEntry type="library" scope="PROVIDED" name="ruby-vips (v2.1.4, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.2.1, asdf: 3.1.0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sidekiq (v6.5.0, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spina (v2.10.0, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.0.3, asdf: 3.1.0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.4.2, asdf: 3.1.0) [gem]" level="application" />
@@ -163,6 +172,7 @@
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="serializer" />
+        <option value="sidekiq:job" />
         <option value="slim:component" />
         <option value="spina:embed" />
         <option value="spina:install" />
@@ -214,6 +224,7 @@
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="serializer" />
+        <option value="sidekiq:job" />
         <option value="slim:component" />
         <option value="spina:embed" />
         <option value="spina:install" />

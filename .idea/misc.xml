@@ -4,24 +4,8 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="104" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/app/helpers/games_helper.rb" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="518" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/game.html.erb" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="383" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/layouts/default/application.html.erb" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="684" />
+          <option name="caretOffset" value="180" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/packages.html.erb" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="2938" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/config/initializers/themes/default.rb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
           <option name="caretOffset" value="461" />
@@ -36,7 +20,7 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/shared/_footer.html.erb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="177" />
+          <option name="caretOffset" value="423" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/games.html.erb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
@@ -48,8 +32,16 @@
           <option name="fileUrl" value="file://$USER_HOME$/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/spina-2.10.0/app/presenters/spina/menu_presenter.rb" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="407" />
+          <option name="caretOffset" value="351" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/app/views/default/pages/package.html.erb" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="155" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/bin/dev" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="210" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/config/database.yml" />
         </OpenedFileInfo>
       </list>
     </option>

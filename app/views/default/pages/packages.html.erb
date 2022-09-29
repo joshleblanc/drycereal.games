@@ -11,7 +11,7 @@
       <%= content.html :body %>
     </div>
     <div class="flex justify-center flex-wrap">
-      <% packages.each do |package| %>
+      <% packages.reverse.each do |package| %>
         <div class="card text-black bg-white shadow w-full hover:shadow-black ease-in-out duration-300 m-4">
           <%= link_to package.materialized_path do %>
             <div class="flex items-center p-4 pl-8">
