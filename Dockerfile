@@ -1,4 +1,4 @@
-FROM ruby:3.1
+FROM ruby:3.3
 ARG RAILS_MASTER_KEY
 
 RUN gem install "bundler:~>2.0" --no-document && \
@@ -71,22 +71,6 @@ RUN set -ex \
 RUN apt-get update -qq && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libvips42 meson ninja-build imagemagick libpq-dev build-essential pkg-config libglib2.0-dev libexpat1-dev && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt
-
-ARG VIPS_VERSION=8.15.2
-ARG VIPS_URL=https://github.com/libvips/libvips/releases/download
-
-RUN apt-get install -y \
-        wget
-
-RUN cd /usr/local/src \
-        && wget ${VIPS_URL}/v${VIPS_VERSION}/vips-${VIPS_VERSION}.tar.xz \
-        && tar -xJf vips-${VIPS_VERSION}.tar.xz \
-        && cd vips-${VIPS_VERSION} \
-        && meson setup build \
-        && cd build \
-        && meson compile \
-        && meson test \
-        && meson install
 
 # App
 
