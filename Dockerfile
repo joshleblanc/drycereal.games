@@ -82,9 +82,11 @@ RUN cd /usr/local/src \
         && wget ${VIPS_URL}/v${VIPS_VERSION}/vips-${VIPS_VERSION}.tar.xz \
         && tar -xJf vips-${VIPS_VERSION}.tar.xz \
         && cd vips-${VIPS_VERSION} \
-        && ./configure --disable-deprecated \
-        && make -j 4 V=0 \
-        && make install
+        && meson setup build \
+        && cd build
+        && meson compile \
+        && meson test \
+        && meson install
 
 # App
 
