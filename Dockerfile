@@ -69,7 +69,7 @@ RUN set -ex \
 # App dependencies
 
 RUN apt-get update -qq && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends imagemagick libpq-dev && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends imagemagick libpq-dev build-essential pkg-config libglib2.0-dev libexpat1-dev && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt
 
 ARG VIPS_VERSION=8.15.2
