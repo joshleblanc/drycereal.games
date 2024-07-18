@@ -83,7 +83,7 @@ RUN cd /usr/local/src \
         && tar -xJf vips-${VIPS_VERSION}.tar.xz \
         && cd vips-${VIPS_VERSION} \
         && meson setup build \
-        && cd build
+        && cd build \
         && meson compile \
         && meson test \
         && meson install
