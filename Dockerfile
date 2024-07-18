@@ -69,8 +69,22 @@ RUN set -ex \
 # App dependencies
 
 RUN apt-get update -qq && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends imagemagick libvips libvips-dev libvips-tools libpq-dev && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends imagemagick libpq-dev && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt
+
+ARG VIPS_VERSION=8.15.2
+ARG VIPS_URL=https://github.com/libvips/libvips/releases/download
+
+RUN apt-get install -y \
+        wget
+
+RUN cd /usr/local/src \
+        && wget ${VIPS_URL}/v${VIPS_VERSION}/vips-${VIPS_VERSION}.tar.gz \
+        && tar xzf vips-${VIPS_VERSION}.tar.gz \
+        && cd vips-${VIPS_VERSION} \
+        && ./configure --disable-deprecated \
+        && make -j 4 V=0 \
+        && make install
 
 # App
 
