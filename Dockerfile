@@ -79,7 +79,7 @@ RUN apt-get install -y \
         wget
 
 RUN cd /usr/local/src \
-        && wget ${VIPS_URL}/v${VIPS_VERSION}/vips-${VIPS_VERSION}.tar.gz \
+        && wget ${VIPS_URL}/v${VIPS_VERSION}/vips-${VIPS_VERSION}.tar.xz \
         && tar xzf vips-${VIPS_VERSION}.tar.gz \
         && cd vips-${VIPS_VERSION} \
         && ./configure --disable-deprecated \
