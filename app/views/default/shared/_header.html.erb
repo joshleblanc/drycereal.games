@@ -5,7 +5,7 @@
       <% if local_assigns[:title].present? %>
         <h1 class="text-5xl text-white font-bold drop-shadow-xl"><%= title %></h1>
       <% end %>
-      <% if local_assigns[:headline].present? %>
+      <% if local_assigns[:headline].present? && !local_assigns[:exclude_link].present? %>
         <p class="py-6"><%= headline %></p>
       <% end %>
     </div>

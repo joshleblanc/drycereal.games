@@ -1,11 +1,11 @@
 module.exports = {
   content: [
-    '/usr/local/rvm/gems/ruby-3.1.0/gems/spina-2.10.0/app/views/**/*.*',
-'/usr/local/rvm/gems/ruby-3.1.0/gems/spina-2.10.0/app/components/**/*.*',
-'/usr/local/rvm/gems/ruby-3.1.0/gems/spina-2.10.0/app/helpers/**/*.*',
-'/usr/local/rvm/gems/ruby-3.1.0/gems/spina-2.10.0/app/assets/javascripts/**/*.js',
-'/usr/local/rvm/gems/ruby-3.1.0/gems/spina-2.10.0/app/**/application.tailwind.css'
-  ],  
+    '/home/cereal/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/spina-2.18.0/app/views/**/*.*',
+'/home/cereal/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/spina-2.18.0/app/components/**/*.*',
+'/home/cereal/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/spina-2.18.0/app/helpers/**/*.*',
+'/home/cereal/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/spina-2.18.0/app/assets/javascripts/**/*.js',
+'/home/cereal/.asdf/installs/ruby/3.1.0/lib/ruby/gems/3.1.0/gems/spina-2.18.0/app/**/application.tailwind.css'
+  ],
   theme: {
     fontFamily: {
       body: ['Metropolis'],
@@ -23,7 +23,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/typography'),
+	require('@tailwindcss/aspect-ratio'),
+	require('@tailwindcss/typography')
   ]
 }

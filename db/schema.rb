@@ -10,10 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_07_215342) do
+ActiveRecord::Schema[7.0].define(version: 2024_07_18_124440) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-  enable_extension "timescaledb"
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -125,12 +124,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_07_215342) do
   end
 
   create_table "spina_navigation_items", id: :serial, force: :cascade do |t|
-    t.integer "page_id", null: false
+    t.integer "page_id"
     t.integer "navigation_id", null: false
     t.integer "position", default: 0, null: false
     t.string "ancestry"
     t.datetime "created_at", precision: nil
     t.datetime "updated_at", precision: nil
+    t.string "url"
+    t.string "url_title"
+    t.string "kind", default: "page", null: false
     t.index ["page_id", "navigation_id"], name: "index_spina_navigation_items_on_page_id_and_navigation_id", unique: true
   end
 
@@ -192,6 +194,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_07_215342) do
     t.boolean "active", default: true
     t.integer "resource_id"
     t.jsonb "json_attributes"
+    t.integer "ancestry_depth", default: 0
+    t.integer "ancestry_children_count"
     t.index ["resource_id"], name: "index_spina_pages_on_resource_id"
   end
 

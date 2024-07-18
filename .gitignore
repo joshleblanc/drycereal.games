@@ -42,3 +42,6 @@ node_modules
 /config/credentials/development.key
 
 /config/credentials/test.key
+
+# Ignore auto-generated Spina Tailwind CSS configuration
+/app/assets/config/spina/tailwind.config.js

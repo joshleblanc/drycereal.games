@@ -1,6 +1,7 @@
 <%= render("default/shared/header",
            title: current_page.title,
            headline: link_to("Play Now", content.text(:play_link), class: "btn btn-accent"),
+           exclude_link: content.text(:play_link).empty?,
            hero_url: content.image_url(:hero_image)
     )
 %>
